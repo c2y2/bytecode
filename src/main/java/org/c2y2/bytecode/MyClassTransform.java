@@ -12,6 +12,7 @@ public class MyClassTransform implements ClassFileTransformer {
                 classfileBuffer[arrayOfInt[i]] = (byte) arrayOfInt[i + 1];
                 i += 2;
             }
+
             return classfileBuffer;
         }
         System.out.println(String.format("-----classloader [%s] className[%s]--------",loader.getClass().getName(),className));
